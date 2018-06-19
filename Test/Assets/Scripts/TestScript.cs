@@ -14,7 +14,7 @@ public class TestScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float time = UnityEngine.Time.time;
-        float offset = Mathf.Sin(time);
+        float offset = Mathf.Sin(time * 2.0f);
 
         this.transform.localPosition = this.StartPosition + Vector3.up * offset;
 	}
