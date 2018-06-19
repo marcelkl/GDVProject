@@ -15,6 +15,7 @@ public class TestScript : MonoBehaviour {
 	void Update () {
         float time = UnityEngine.Time.time;
         float offset = Mathf.Sin(time * 2.0f);
+        offset *= 2.0f;
 
         this.transform.localPosition = this.StartPosition + Vector3.up * offset;
 	}
